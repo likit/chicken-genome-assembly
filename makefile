@@ -8,7 +8,7 @@ quality-trim:
 interleave:
 	qsub protocol/interleave.sh
 
-normalize_pe:
+normalize-pe:
 	#qsub -v input="SRR105788_1_pe_trim.fastq",savetable="ins356.kh",loadtable="" protocol/normalize_pe.sh
 	#qsub -v input="SRR105789_1_pe_trim.fastq",savetable="ins356.kh",loadtable="ins356.kh" protocol/normalize_pe.sh
 	qsub -v input="SRR105792_1_pe_trim.fastq",savetable="ins356.kh",loadtable="ins356.kh" protocol/normalize_pe.sh
